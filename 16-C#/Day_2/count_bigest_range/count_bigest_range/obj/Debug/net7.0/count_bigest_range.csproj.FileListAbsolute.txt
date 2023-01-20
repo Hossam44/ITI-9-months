@@ -1,0 +1,15 @@
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\bin\Debug\net7.0\count_bigest_range.exe
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\bin\Debug\net7.0\count_bigest_range.deps.json
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\bin\Debug\net7.0\count_bigest_range.runtimeconfig.json
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\bin\Debug\net7.0\count_bigest_range.dll
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\bin\Debug\net7.0\count_bigest_range.pdb
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.csproj.AssemblyReference.cache
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.GeneratedMSBuildEditorConfig.editorconfig
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.AssemblyInfoInputs.cache
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.AssemblyInfo.cs
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.csproj.CoreCompileInputs.cache
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.dll
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\refint\count_bigest_range.dll
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.pdb
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\count_bigest_range.genruntimeconfig.cache
+D:\9_months\16-C#\Day_2\count_bigest_range\count_bigest_range\obj\Debug\net7.0\ref\count_bigest_range.dll

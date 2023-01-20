@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1667395156 source:d:\9_months\c++\day_6\color__inhertance_design\main.cpp
+	<windows.h>
+	<iostream>
+	"C:\Program Files (x86)\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+
+1667335453 c:\program files (x86)\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

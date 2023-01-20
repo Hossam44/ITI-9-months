@@ -1,0 +1,27 @@
+@keyframes fadeIn {
+  0% { box-shadow:10px 10px 10px rgb(121, 74, 240); 
+      background-color: antiquewhite;    
+  }
+  100% { box-shadow:10px 10px 10px rgb(189, 179, 179); 
+        background-color: blueviolet;
+  }
+}
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  position: absolute;
+  color: blueviolet;
+  background-color: antiquewhite;
+  top: 350px;
+  left:500px;
+}
+
+input:hover{
+  -ms-animation: fadeIn;
+
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

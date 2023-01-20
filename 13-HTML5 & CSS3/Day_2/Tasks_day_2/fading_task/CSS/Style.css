@@ -1,0 +1,16 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+img{
+    width: 300px;
+    height: 300px;
+    -ms-animation: fadeIn;
+    -ms-animation-duration: 5s;
+
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+

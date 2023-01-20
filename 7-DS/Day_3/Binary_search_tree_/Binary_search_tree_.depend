@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1669421470 source:d:\9_months\7-ds\day_3\binary_search_tree_\main.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<list>
+

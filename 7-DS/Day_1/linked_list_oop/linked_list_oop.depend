@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1669204599 source:d:\9_months\7-ds\day_1\linked_list_oop\main.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

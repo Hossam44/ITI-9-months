@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script src="library.js"></script>
+    <div>
+        <img id ="img_id" src="images/1.jpg" height="200px" width="200px">
+        <label>Welcome</label>
+        <label id ="lab_1"></label>
+        <label>U Have Viseted This Site </label>
+        <label id ="count_id"></label>
+        <label>Times :)</label>
+    </div>
+    <script>
+        var cnt = getCookie("Count");
+        var gen = getCookie("genger");
+        var color = getCookie("color");
+        document.getElementById("lab_1").innerHTML = getCookie("Name");
+        document.getElementById("lab_1").style.color=color;
+        document.getElementById("count_id").style.color=color;
+
+        document.getElementById("count_id").innerHTML = cnt;
+        if(gen == "Female")
+            document.getElementById("img_id").src="images/2.jpg";
+        cnt = parseInt(cnt)+1;
+        cnt = cnt.toString();
+        setcookie("Count",cnt,new Date());
+        
+    </script>
+</body>
+</html>

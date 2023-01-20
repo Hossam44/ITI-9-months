@@ -1,0 +1,15 @@
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\bin\Debug\net7.0\reverseWords.exe
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\bin\Debug\net7.0\reverseWords.deps.json
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\bin\Debug\net7.0\reverseWords.runtimeconfig.json
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\bin\Debug\net7.0\reverseWords.dll
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\bin\Debug\net7.0\reverseWords.pdb
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.csproj.AssemblyReference.cache
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.GeneratedMSBuildEditorConfig.editorconfig
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.AssemblyInfoInputs.cache
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.AssemblyInfo.cs
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.csproj.CoreCompileInputs.cache
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.dll
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\refint\reverseWords.dll
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.pdb
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\reverseWords.genruntimeconfig.cache
+D:\9_months\16-C#\Day_2\reverseWords\reverseWords\obj\Debug\net7.0\ref\reverseWords.dll

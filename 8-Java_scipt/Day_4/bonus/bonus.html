@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+    <!--<script src="task_4.1.js"></script> -->
+
+
+</head>
+<body>
+    <hr>
+
+    <br>
+    <img src="images/Moon.gif" id="img_id_1" height="50" width="50" style="vertical-align:middle;margin:100px 50px;margin-left: 300px;">
+    <img src="images/Moon.gif" id="img_id_2" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/Moon.gif" id="img_id_3" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/Moon.gif" id="img_id_4" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <br>
+    <img src="images/Moon.gif" id="img_id_5" height="50" width="50" style="vertical-align:middle;margin:100px 50px;margin-left: 300px;">
+    <img src="images/Moon.gif" id="img_id_6" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/Moon.gif" id="img_id_7" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/Moon.gif" id="img_id_8" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+
+    <br>
+    <img src="images/Moon.gif" id="img_id_9" height="50" width="50" style="vertical-align:middle;margin:100px 50px;margin-left: 300px;">
+    <img src="images/Moon.gif" id="img_id_10" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/Moon.gif" id="img_id_11" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/Moon.gif" id="img_id_12" height="50" width="50" style="vertical-align:middle;margin:100px 50px">
+
+    <script>
+        var timer_ID;
+        var count = 0;
+        var last_img;
+        var last_id;
+        document.getElementById("img_id_1").onclick = function(){
+            document.getElementById("img_id_1").src = "images/2.gif";
+            if(count%2==0)
+            {
+                last_img = "images/2.gif";
+                last_id = "img_id_1";
+                count++;
+            }
+            else
+            {
+                if("images/2.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_1").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_2").onclick = function(){
+            document.getElementById("img_id_2").src = "images/6.gif";
+            if(count%2==0)
+            {
+                last_img = "images/6.gif";
+                last_id = "img_id_2";
+                count++;
+            }
+            else
+            {
+                if("images/6.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_2").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_3").onclick = function(){
+
+            document.getElementById("img_id_3").src = "images/3.gif";
+            if(count%2==0)
+            {
+                last_img = "images/3.gif";
+                last_id = "img_id_3";
+                count++;
+            }
+            else
+            {
+                if("images/3.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_3").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_4").onclick = function(){
+
+            document.getElementById("img_id_4").src = "images/5.gif";
+            if(count%2==0)
+            {
+                last_img = "images/5.gif";
+                last_id = "img_id_4";
+                count++;
+            }
+            else
+            {
+                if("images/5.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_4").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+
+
+        document.getElementById("img_id_5").onclick = function(){
+            document.getElementById("img_id_5").src = "images/4.gif";
+            if(count%2==0)
+            {
+                last_img = "images/4.gif";
+                last_id = "img_id_5";
+                count++;
+            }
+            else
+            {
+                if("images/4.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_5").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_6").onclick = function(){
+            document.getElementById("img_id_6").src = "images/1.gif";
+            if(count%2==0)
+            {
+                last_img = "images/1.gif";
+                last_id = "img_id_6";
+                count++;
+            }
+            else
+            {
+                if("images/1.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_6").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_7").onclick = function(){
+            document.getElementById("img_id_7").src = "images/1.gif";
+            if(count%2==0)
+            {
+                last_img = "images/1.gif";
+                last_id = "img_id_7";
+                count++;
+            }
+            else
+            {
+                if("images/1.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_7").src = "images/Moon.gif";
+
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_8").onclick = function(){
+            document.getElementById("img_id_8").src = "images/2.gif";
+            if(count%2==0)
+            {
+                last_img = "images/2.gif";
+                last_id = "img_id_8";
+                count++;
+            }
+            else
+            {
+                if("images/2.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_8").src = "images/Moon.gif";
+                    },300)
+                }
+            }
+        }
+
+        document.getElementById("img_id_9").onclick = function(){
+            document.getElementById("img_id_9").src = "images/6.gif";
+            if(count%2==0)
+            {
+                last_img = "images/6.gif";
+                last_id = "img_id_9";
+                count++;
+            }
+            else
+            {
+                if("images/6.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_9").src = "images/Moon.gif";
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_10").onclick = function(){
+
+            document.getElementById("img_id_10").src = "images/5.gif";
+            if(count%2==0)
+            {
+                last_img = "images/5.gif";
+                last_id = "img_id_10";
+                count++;
+            }
+            else
+            {
+                if("images/5.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_10").src = "images/Moon.gif";
+                    },300)
+                }
+            }
+
+        }
+        document.getElementById("img_id_11").onclick = function(){
+            document.getElementById("img_id_11").src = "images/3.gif";
+            if(count%2==0)
+            {
+                last_img = "images/3.gif";
+                last_id = "img_id_11";
+                count++;
+            }
+            else
+            {
+                if("images/3.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_11").src = "images/Moon.gif";
+                    },300)
+                }
+            }
+        }
+        document.getElementById("img_id_12").onclick = function(){
+            document.getElementById("img_id_12").src = "images/4.gif";
+            if(count%2==0)
+            {
+                last_img = "images/4.gif";
+                last_id = "img_id_12";
+                count++;
+            }
+            else
+            {
+                if("images/4.gif" == last_img)
+                {
+                    count++;
+                }
+                else
+                {
+                    count--;
+                    setTimeout(function(){
+                        document.getElementById(last_id).src = "images/Moon.gif";
+                        document.getElementById("img_id_11").src = "images/Moon.gif";
+                    },300)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

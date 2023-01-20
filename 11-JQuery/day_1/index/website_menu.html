@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>website_menu</title>
+        <link rel="stylesheet" href="/style/website_menu.css">
+
+
+</head>
+<body style="background-color: antiquewhite;">
+    <div id="div_1">
+        <input class="bar_cls" type="button" value="About" id="About_id" >
+        <input class="bar_cls" type="button" value="Gallary" id="Gallary_id" >
+        <input class="bar_cls" type="button" value="services" id="services_id" >
+        <input class="bar_cls" type="button" value="complain" id="complain_id" >
+    </div>
+
+    <div class = "hidden_id" id="div_2">
+        <h3>Story About Snow Man</h3>
+    </div>
+    <div class = "hidden_id" id="div_3">
+        <img id="left_id" src="../images/left.png" >
+        <img id="img_id" src="../images/1.jpg">
+        <img id="right_id" src="../images/right.png">
+    </div>
+
+    <div class = "hidden_id"  id="div_4">
+        <input type="button" id="btn1" value="item-1">
+        <input type="button" id="btn2" value="item-2">
+        <input type="button" id="btn3" value="item-3">
+    </div>
+
+    <div class = "hidden_id"  id="div_5">
+        <form>
+            <label>Name</label>
+            <input type="text" id="name_id" ><br>
+            <label>Email</label>
+            <input type="text" id="Email_id"><br>
+            <label>Phone</label>
+            <input type="text" id="Phone_id"><br><br>
+            <label style="margin-left: 100px;">Complain</label><br>
+            <input style="margin-left: 35px;"type="text" id="complain_msg_id">  <br><br>
+            <input type="button" id="send_id" value="Send">
+
+        </form>
+    </div>
+
+    <div class = "hidden_id"  id="div_6">
+        <form>
+            <label class="ll" >Name</label><br>
+            <input class="cls" type="text" id="name_reg_id" readonly><br>
+            <label class="ll" >Email</label><br>
+            <input class="cls" type="text" id="Email_reg_id" readonly><br>
+            <label class="ll" >Phone</label><br>
+            <input class="cls" type="text" id="Phone_reg_id" readonly><br>
+            <label class="ll">Complain</label><br>
+            <input class="cls" type="text" id="complain_reg_id" readonly>  <br><br>
+            <input class="cls" type="button" id="Edit_id" value="Edit">  
+
+        </form>
+    </div>
+
+    <script src="/library/JqueryDev.js"></script>
+    <script src="/script/website_menu.js"></script>
+</body>
+</html>

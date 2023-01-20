@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1667344835 source:d:\9_months\c++\day_4\ssss\main.cpp
+	<iostream>
+	"C:\Program Files (x86)\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+
+1667335453 c:\program files (x86)\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .center {
+                text-align: center;
+            }
+            .right {
+                text-align: right;
+            }
+            .left {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body style="background-color: bisque;">
+        <h1 style="text-align: center;color:rgb(121, 125, 124);">Generate Get Well Soon Card</h1>
+
+
+        <div style="text-align: center;">
+            <img src="images/1.jpg" id="1.jpg" width="150px" height="150px">
+            <img src="images/2.jpg" id="2.jpg" width="150px" height="150px">
+            <img src="images/3.jpg" id="3.jpg" width="150px" height="150pxs">
+            <br>
+            <input type="radio" name = "images" value="1.jpg" style="position: absolute; left: 560px;">
+            <input type="radio" name = "images" value="2.jpg" style="position: absolute; left: 710px;">
+            <input type="radio" name = "images" value="3.jpg" style="position: absolute; left: 860px;"><br>
+            
+        </div>
+        <div style="text-align: center;">
+            <img src="images/4.jpg" id="4.jpg" width="150px" height="150px">
+            <img src="images/5.jpg" id="5.jpg" width="150px" height="150px">
+            <img src="images/6.jpg" id="6.jpg" width="150px" height="150px">
+
+            <br>
+            <input type="radio" name = "images" value="4.jpg" style="position: absolute; left: 560px;">
+            <input type="radio" name = "images" value="5.jpg" style="position: absolute; left: 710px;">
+            <input type="radio" name = "images" value="6.jpg" style="position: absolute; left: 860px;"><br>
+            <h2 style="color:rgb(121, 125, 124) ">Personal Message</h2>
+
+            <input id = "text_id" type="text" value=""><br><br>
+            <!--<textarea id = "text_id" name="text_area" rows="8" cols="50" style="resize: none;"></textarea><br>-->
+            <input type="button" id = "Generate_id" value="Generate">
+
+        </div>
+
+        <script src="createCard.js"></script>
+    </body>
+</html>

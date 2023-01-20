@@ -1,0 +1,123 @@
+input{
+    background-color: rgb(239, 173, 6);
+    color:rgb(93, 102, 109);
+    border-radius: 15px;
+    border: 2px solid #a1b5a2;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    color:rgb(116, 116, 34);
+    
+}
+form{
+    position:absolute;
+    top: 150px;
+    margin-left: 480px;
+    padding: 40px;
+    background-color: #a1b5a2;
+}
+form input{
+    background-color: rgb(212, 210, 206);
+
+}
+label{
+    font-size: 20px;
+}
+#div_1{
+    margin-left: 200px;
+
+}
+#div_2{
+    background-color: rgb(202, 196, 188);
+    height: 400px;
+    width: 400px;
+    margin-left: 450px;
+    margin-top: 100px;
+
+}
+#div_3{
+    height: 500px;
+    width: 600px;
+    margin-left: 395px;
+    position:absolute;
+    top: 200px;
+    
+
+}
+#img_id{
+    width: 200px;
+    height: 200px;
+}
+
+textarea{
+    resize: none;
+
+}
+#left_id{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+
+    margin-right: 30px;
+
+
+}
+#right_id{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+
+}
+
+
+
+#btn1 {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    left: 710px;
+}
+#btn2{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 112px;
+    left: 710px;
+}
+#btn3{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 154px;
+    left: 710px;
+}
+#send_id{
+    background: rgb(182, 144, 21);
+    border: 2px solid #968d80;
+    border-radius: 0px;
+    width: 200px;
+    height: 50px;
+    margin-left: 35px
+}
+#Edit_id{
+    background: rgb(182, 144, 21);
+    border: 2px solid #968d80;
+    border-radius: 0px;
+    width: 200px;
+    height: 50px;
+    margin-left: 35px
+}
+.ll{
+    margin-left: 100px;
+}
+.cls{
+    margin-left: 25px;
+}

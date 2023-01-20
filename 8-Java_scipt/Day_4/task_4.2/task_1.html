@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+    <!--<script src="task_4.1.js"></script> -->
+
+
+</head>
+<body>
+    <hr>
+
+    <br>
+    <img src="images/marble3.jpg" id="img_id_1" height="70" width="70" style="vertical-align:middle;margin:100px 50px;margin-left: 300px;">
+    <img src="images/marble1.jpg" id="img_id_2" height="70" width="70" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/marble1.jpg" id="img_id_3" height="70" width="70" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/marble1.jpg" id="img_id_4" height="70" width="70" style="vertical-align:middle;margin:100px 50px">
+    <img src="images/marble1.jpg" id="img_id_5" height="70" width="70" style="vertical-align:middle;margin:100px 50px">
+    <script>
+        var timer_ID;
+        var count = 0;
+        keep_going();
+        document.getElementById("img_id_1").onmouseover = function(){
+            clearInterval(timer_ID);
+        }
+        document.getElementById("img_id_1").onmouseleave = function(){
+            keep_going();
+        }
+        document.getElementById("img_id_2").onmouseover = function(){
+            clearInterval(timer_ID);
+        }
+        document.getElementById("img_id_2").onmouseleave = function(){
+            keep_going();
+        }
+        document.getElementById("img_id_3").onmouseover = function(){
+            clearInterval(timer_ID);
+        }
+        document.getElementById("img_id_3").onmouseleave = function(){
+            keep_going();
+        }
+        document.getElementById("img_id_4").onmouseover = function(){
+            clearInterval(timer_ID);
+        }
+        document.getElementById("img_id_4").onmouseleave = function(){
+            keep_going();
+        }
+        document.getElementById("img_id_5").onmouseover = function(){
+            clearInterval(timer_ID);
+        }
+        document.getElementById("img_id_5").onmouseleave = function(){
+            keep_going();
+        }
+
+        function keep_going(){
+            timer_ID = setInterval(function(){
+                document.getElementsByTagName("img")[count].src = "images/marble1.jpg";
+                count = (count + 1)%5;
+                document.getElementsByTagName("img")[count].src = "images/marble3.jpg";
+            },400)
+         }
+
+
+    </script>
+</body>
+</html>

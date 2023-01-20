@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="margin-left: 550px; margin-right: 640px;margin-top: 40px; background-color: bisque;">
+        <input style="margin: 10px;color: rgb(242, 58, 58);" id = "scren" type="text" value ="" size="29px">
+        <br>
+        <input style="padding: 5px;margin: 2px;margin-left: 10px;" id = "7_id" type="button" value ="    7    ">
+        <input style="margin: 2px;padding: 5px;" id = "8_id" type="button" value ="    8    " >
+        <input style="margin: 2px;padding: 5px;" id = "9_id" type="button" value ="    9    " >
+        <input style="margin: 2px;padding: 5px;" id = "÷_id" type="button" value ="    ÷    " >
+
+        <input style="margin: 2px;padding: 5px;margin-left: 10px;" id = "4_id" type="button" value ="    4    ">
+        <input style="margin: 2px;padding: 5px;" id = "5_id" type="button" value ="    5    " >
+        <input style="margin: 2px;padding: 5px;" id = "6_id" type="button" value ="    6    " >
+        <input style="margin: 2px;padding: 5px;" id = "x_id" type="button" value ="    x    " >
+
+        <input style="margin: 2px;padding: 5px;margin-left: 10px;" id = "1_id" type="button" value ="    1    ">
+        <input style="margin: 2px;padding: 5px;" id = "2_id" type="button" value ="    2    ">
+        <input style="margin: 2px;padding: 5px;" id = "3_id" type="button" value ="    3    ">
+        <input style="margin: 2px;padding: 5px;" id = "-_id" type="button" value ="    -     ">
+
+        <input style="margin: 2px;padding: 5px;margin-left: 10px;" id = "0_id" type="button" value ="    0    ">
+        <input style="margin: 2px;padding: 5px;" id = "dot_id" type="button" value ="     .    ">
+        <input style="margin: 2px;padding: 5px;" id = "=_id" type="button" value ="    =    ">
+        <input style="margin: 2px;padding: 5px;" id = "+_id" type="button" value ="    +    ">
+
+        <input style="margin: 10px;padding: 5px;margin-left: 10px;" id = "clear_id" type="button" value ="                         clear                         ">
+
+    </fieldset>
+    <script>
+        var dot_ok = 1;
+
+        document.getElementById("7_id").onclick=function(){
+            document.getElementById("scren").value+="7";
+       }
+       document.getElementById("8_id").onclick=function(){
+            document.getElementById("scren").value+="8";
+       }
+       document.getElementById("9_id").onclick=function(){
+            document.getElementById("scren").value+="9";
+       }
+       document.getElementById("÷_id").onclick=function(){
+
+            var divide = document.getElementById("scren").value;
+            if(divide.length>0 && divide[divide.length-1]>='0' && divide[divide.length-1]<='9'){
+                document.getElementById("scren").value+="÷";
+            }
+            dot_ok = 1;
+       }
+
+       document.getElementById("4_id").onclick=function(){
+            document.getElementById("scren").value+="4";
+       }
+       document.getElementById("5_id").onclick=function(){
+            document.getElementById("scren").value+="5";
+       }
+       document.getElementById("6_id").onclick=function(){
+            document.getElementById("scren").value+="6";
+       }
+       document.getElementById("x_id").onclick=function(){
+            var mul = document.getElementById("scren").value;
+            if(mul.length>0 && mul[mul.length-1]>='0' && mul[mul.length-1]<='9'){
+                document.getElementById("scren").value+="x";
+            }
+            dot_ok = 1;
+       }
+       
+
+       document.getElementById("1_id").onclick=function(){
+            document.getElementById("scren").value+="1";
+       }
+       document.getElementById("2_id").onclick=function(){
+            document.getElementById("scren").value+="2";
+       }
+       document.getElementById("3_id").onclick=function(){
+            document.getElementById("scren").value+="3";
+       }
+       document.getElementById("-_id").onclick=function(){
+            var subb = document.getElementById("scren").value;
+            if(subb.length>0 && subb[subb.length-1]>='0' && subb[subb.length-1]<='9'){
+                document.getElementById("scren").value+="-";
+            }
+            dot_ok = 1;
+       }
+
+
+       document.getElementById("0_id").onclick=function(){
+            document.getElementById("scren").value+="0";
+       }
+       document.getElementById("dot_id").onclick=function(){
+            var dot = document.getElementById("scren").value;
+            if(dot.length>0 && dot[dot.length-1]>='0' && dot[dot.length-1]<='9' && dot_ok){
+                document.getElementById("scren").value+=".";
+                dot_ok = 0;
+            }
+       }
+       document.getElementById("=_id").onclick=function(){
+            var result = document.getElementById("scren").value;
+            var arr = [];
+            var Operator = [];
+            var st=0;
+            var en=0;
+            var count=0;
+            var final_result = 0;
+
+            for(var i=0;i<result.length;i++)
+            {
+                if(result[i]=='+' || result[i]=='-'|| result[i]=='x'|| result[i]=='÷')
+                {
+                    en = i;
+                    arr[count] = result.substring(st,en);
+                    Operator[count++] = result[i];
+                    st = i+1;
+                }
+                
+            }
+            arr[count] = result.substring(st,result.length);
+            
+            
+            for(var i=0;i<arr.length;i++)
+            {
+                arr[i] = parseFloat(arr[i]);
+            }
+
+            for(var i =0;i<Operator.length;i++)
+            {
+                if(Operator[i]=='÷')
+                {
+                    arr[i+1] = arr[i] / arr[i+1];
+                    arr.splice(i,1);
+                    Operator.splice(i--,1);
+
+                }
+                else if(Operator[i]=='x')
+                {
+                    arr[i+1] = arr[i] * arr[i+1];
+                    arr.splice(i,1);
+                    Operator.splice(i--,1);
+                }
+            }
+            for(var i =0;i<Operator.length;i++)
+            {
+                if(Operator[i]=='+')
+                {
+                    arr[i+1] = arr[i] + arr[i+1];
+                    arr.splice(i,1);
+                    Operator.splice(i--,1);
+                }
+                else if(Operator[i]=='-')
+                {
+                    arr[i+1] = arr[i] - arr[i+1];
+                    arr.splice(i,1);
+                    Operator.splice(i--,1);
+                }
+
+            }
+
+
+            arr[arr.length-1] = arr[arr.length-1].toFixed(4);
+            document.getElementById("scren").value = arr[arr.length-1];
+
+
+       }
+       document.getElementById("+_id").onclick=function(){
+            var plus = document.getElementById("scren").value;
+            if(plus.length>0 && plus[plus.length-1]>='0' && plus[plus.length-1]<='9'){
+                document.getElementById("scren").value+="+";
+            }
+            dot_ok = 1;
+       }
+       document.getElementById("clear_id").onclick=function(){
+            document.getElementById("scren").value="";
+            dot_ok = 1;
+       }
+    </script>
+</body>
+</html>

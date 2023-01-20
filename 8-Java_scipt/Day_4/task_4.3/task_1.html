@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+    <!--<script src="task_4.1.js"></script> -->
+
+
+</head>
+<body>
+    <form style="background-color:#00ffee(0, 255, 255) ;" action="welcome_page.html">
+        <fieldset style="color: rgb(0, 195, 255);margin-left: 550px;margin-top: 50px;margin-right: 600px;">
+            <br>
+            <label style="margin-right: 20px;">First Name</label>
+            <input type="text" placeholder="First Name" size="15px" name="F_name"><br><br><br>
+
+            <label  style="margin-right: 21px;">Last Name</label>
+            <input type="text" placeholder="Last Name" size="15px" name="L_name"><br><br><br>
+            
+            <label style="margin-right: 50px;">Email</label>
+            <input type="text" placeholder="Email" size="15px" name="Email"><br><br><br>
+
+            <label style="margin-right: 45px;">mobile</label>
+            <input type="text" placeholder="Phone" size="15px" name="Phone"><br><br><br>
+
+            <label style="margin-right: 22px;">Gender</label>
+            <input type="radio" id="Male_id" name="Gen" value="Male">
+            <label for="Male_id">Male</label>
+
+            <input type="radio" id="Female_id" name="Gen" value="Female">
+            <label for="Female_id">Female</label><br><br><br>
+            
+            <input style="margin-left: 80px;" type="submit" value="Submit">
+        </fieldset>  
+
+
+
+
+    </form>
+    <script>
+        var is_chrome = navigator.userAgentData && navigator.userAgentData.brands && navigator.userAgentData.brands.some(b => b.brand === 'Google Chrome');
+        if(!is_chrome)
+        {
+            alert("Use Chrome");
+        }
+
+    </script>
+</body>
+</html>

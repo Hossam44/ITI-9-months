@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1669147848 source:d:\9_months\7-ds\queue_with_linked_list\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+
+1669204255 source:d:\9_months\7-ds\day_1\queue_with_linked_list\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+

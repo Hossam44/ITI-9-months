@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+    <!--<script src="task_4.1.js"></script> -->
+
+
+</head>
+<body>
+    <hr>
+    <input type="button" value="Next">
+    <input type="button" value="pervious">
+    <input type="button" value="scrol">
+    <input type="button" value="stop">
+    <br>
+    <img src="images/1.jpg" id="img_id" height="200" width="200">
+    <script>
+        var timer_ID;
+        var arr_of_images = ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg"];
+        var count = 0;
+
+        document.getElementsByTagName("input")[0].onclick = function(){
+            if(count<5)
+            {
+                count = count + 1;
+                document.getElementById("img_id").src = arr_of_images[count];
+            }
+        }
+
+        document.getElementsByTagName("input")[1].onclick = function(){
+            if(count>0)
+            {
+                count--;
+                document.getElementsByTagName("img")[0].src = arr_of_images[count];
+            }
+        }
+        document.getElementsByTagName("input")[2].onclick = function(){
+            timer_ID = setInterval(function(){
+                count = (count + 1)%6;
+                document.querySelector("#img_id").src = arr_of_images[count];
+
+            },500)
+        }
+        document.getElementsByTagName("input")[3].onclick = function(){
+                clearInterval(timer_ID);
+        }
+
+    </script>
+</body>
+</html>

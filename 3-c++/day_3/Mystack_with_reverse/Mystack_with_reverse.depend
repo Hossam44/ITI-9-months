@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1667135461 source:d:\9_months\c++\day_3\mystack_with_reverse\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+

@@ -1,0 +1,22 @@
+video{
+    width: 50%;
+    height: 50%;
+}
+.video{
+    position: absolute;
+    text-align: center;
+    top: 50px;
+}
+.controls{
+    position:absolute;
+    top: 430px;
+    left: 350px;
+
+}
+.buttons{
+    padding: 5px;
+    margin: 2px;
+    border-radius: 7px;
+    border-color :rgb(219, 155, 27);
+    color:rgb(47, 142, 185)
+}

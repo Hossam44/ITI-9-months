@@ -1,0 +1,15 @@
+D:\9_months\16-C#\Day_1\Hello\Hello\bin\Debug\net7.0\Hello.exe
+D:\9_months\16-C#\Day_1\Hello\Hello\bin\Debug\net7.0\Hello.deps.json
+D:\9_months\16-C#\Day_1\Hello\Hello\bin\Debug\net7.0\Hello.runtimeconfig.json
+D:\9_months\16-C#\Day_1\Hello\Hello\bin\Debug\net7.0\Hello.dll
+D:\9_months\16-C#\Day_1\Hello\Hello\bin\Debug\net7.0\Hello.pdb
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.csproj.AssemblyReference.cache
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.GeneratedMSBuildEditorConfig.editorconfig
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.AssemblyInfoInputs.cache
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.AssemblyInfo.cs
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.csproj.CoreCompileInputs.cache
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.dll
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\refint\Hello.dll
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.pdb
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\Hello.genruntimeconfig.cache
+D:\9_months\16-C#\Day_1\Hello\Hello\obj\Debug\net7.0\ref\Hello.dll

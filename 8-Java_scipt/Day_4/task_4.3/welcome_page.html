@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center">Welcome</h1>
+    <form>
+        <fieldset style="margin-left: 580px;margin-right: 570px; color:rgb(0, 221, 255);background-color:bisque;">
+            <br>
+            <label style="margin-right:30px ;">First Name</label>
+            <input id = "F_name_id" type="text" value="First Name" size="15px" name="F_name" style="color:rgb(172, 25, 25) ;"><br><br><br>
+            <!--<label  style="margin-left: 50px;">First Name</label><br><br><br>-->
+
+            <label style="margin-right:30px">Last Name</label>
+            <input id = "L_name_id" type="text" value="Last Name" size="15px" name="L_name" style="color:rgb(172, 25, 25)"><br><br><br>
+
+            <!--<label id = "L_name_id" style="margin-left: 50px;">Last Name</label><br><br><br>-->
+
+            <label style="margin-right:60px">Email</label>
+            <input id = "Email_id" type="text" value="Email" size="15px" name="Email" style="color:rgb(172, 25, 25)"><br><br><br>
+
+            <!--<label id = "Email_id" style="margin-left: 80px">Email</label><br><br><br>-->
+
+            <label style="margin-right:58px">Phone</label>
+            <input id = "Phone_id" type="text" value="Phone" size="15px" name="Phone" style="color:rgb(172, 25, 25)"><br><br><br>
+
+            <!--<label id = "Phone_id" style="margin-left: 78px">Phone</label><br><br><br>-->
+
+
+            <label style="margin-right:51px">Gender</label>
+            <input id = "Gen_id" type="text" value="Male" size="15px" name="Gender" style="color:rgb(172, 25, 25)"><br><br><br>
+
+            <!--<label id = "Gen_id" style="margin-left: 70px">Male</label><br><br>-->
+        </fieldset>
+    </form>
+    <script>
+        var url = window.location.href;
+        var len = url.indexOf('?');
+        var arr = url.substring(len+1,).split('&');
+        var first_Name = arr[0].substring(arr[0].indexOf("=")+1,);
+        var last_Name = arr[1].substring(arr[1].indexOf("=")+1,);
+        var Email_ = arr[2].substring(arr[2].indexOf("=")+1,);
+        Email_=Email_.replace('%40','@');
+        var Phone_ = arr[3].substring(arr[3].indexOf("=")+1,);
+        var gender_ = arr[4].substring(arr[4].indexOf("=")+1,);
+
+        document.getElementsByTagName("h1")[0].innerHTML = "Welcome "+ first_Name + " " + last_Name;
+        document.getElementById("F_name_id").value = first_Name;
+        document.getElementById("L_name_id").value = last_Name;
+        document.getElementById("Email_id").value = Email_;
+        document.getElementById("Phone_id").value = Phone_;
+        document.getElementById("Gen_id").value = gender_;
+
+    </script>
+</body>
+</html>

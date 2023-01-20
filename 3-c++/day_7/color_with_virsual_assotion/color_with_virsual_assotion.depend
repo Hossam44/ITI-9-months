@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1667481285 source:d:\9_months\c++\day_7\color_with_virsual_assotion\main.cpp
+	<windows.h>
+	<iostream>
+	"C:\Program Files (x86)\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+
+1667335453 c:\program files (x86)\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

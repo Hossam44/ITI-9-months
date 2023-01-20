@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<xsl:template match="books">
+    <table style="  border: 1px solid black;">
+        
+        <tr style="  border: 1px solid black;">
+            <th style="  border: 1px solid black;">Author</th>
+            <th style="  border: 1px solid black;">Title</th>
+            <th style="  border: 1px solid black;">Price</th>
+            
+        </tr>
+        <xsl:for-each select="book">
+            <tr style="  border: 1px solid black;">
+                <td style="  border: 1px solid black;"><xsl:value-of select="author"></xsl:value-of></td>
+                <td style="  border: 1px solid black;"><xsl:value-of select="title"></xsl:value-of></td>
+                <td style="  border: 1px solid black;"><xsl:value-of select="price"></xsl:value-of></td>
+            </tr>
+
+
+        </xsl:for-each>				
+    </table>
+</xsl:template>
+</xsl:stylesheet>
