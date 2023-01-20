@@ -1,0 +1,26 @@
+.center{
+    display: block;
+    text-align: left;
+    margin: auto; 
+}
+#form{
+    display: block;
+    text-align: center;
+    background-color: hsl(33, 100%, 88%);
+}
+.cen{
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+#submit{
+    display: block; 
+    text-align: center; 
+    margin: auto; 
+}
+#Intrests{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: bold;
+}

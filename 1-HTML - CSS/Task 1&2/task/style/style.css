@@ -1,0 +1,70 @@
+#myp{
+    color: rgb(234, 87, 187);
+    text-align: right;
+    font-family: Verdana, Arial, sans-serif;
+
+}
+body{
+    background-color: pink;
+}
+h1{
+    color: black;
+    text-align: center;
+    text-decoration-line: underline; 
+}
+h2,h3{
+    text-align: center;
+}
+.center {
+    display: block;
+    margin: auto;
+}
+.cent{
+    display: block;
+    margin: auto;
+
+}
+#content_P{
+    text-decoration-line: underline; 
+}
+#st1{
+    font-weight: bold;
+    margin: 0;
+}
+#st2{
+    text-decoration: underline;
+    margin: 0;
+}
+#st3{
+    font-style: italic;
+    margin: 0;
+}
+#st4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#st5{
+    font-size: 8px;
+    margin: 0;
+}
+#st6{
+    color: red;
+    margin: 0;
+
+}
+#ddd{
+    text-align: right;
+}
+#ddd2{
+    text-align: center;
+}
+#copyright{
+    text-align: center;
+}
+#my_ft{
+    display: block;
+}
+#my_st{
+    display: block;
+    text-align: right;
+}

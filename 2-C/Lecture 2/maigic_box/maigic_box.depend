@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666016680 source:d:\iti_9\day_2\maigic_box\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

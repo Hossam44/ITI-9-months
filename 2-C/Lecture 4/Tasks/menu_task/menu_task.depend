@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666219557 source:d:\9_months\2-c\lecture 4\tasks\menu_task\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
