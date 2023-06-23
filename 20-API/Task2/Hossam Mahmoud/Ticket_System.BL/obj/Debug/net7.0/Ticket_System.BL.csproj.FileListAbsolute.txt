@@ -1,0 +1,15 @@
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\bin\Debug\net7.0\Ticket_System.BL.deps.json
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\bin\Debug\net7.0\Ticket_System.BL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\bin\Debug\net7.0\Ticket_System.BL.pdb
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\bin\Debug\net7.0\Ticket_System.DAL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\bin\Debug\net7.0\Ticket_System.DAL.pdb
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.csproj.AssemblyReference.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.AssemblyInfoInputs.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.AssemblyInfo.cs
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.csproj.CoreCompileInputs.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.csproj.CopyComplete
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\refint\Ticket_System.BL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\Ticket_System.BL.pdb
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.BL\obj\Debug\net7.0\ref\Ticket_System.BL.dll

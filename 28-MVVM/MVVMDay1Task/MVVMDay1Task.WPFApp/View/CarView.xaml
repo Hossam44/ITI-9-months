@@ -1,0 +1,65 @@
+﻿<Window x:Class="MVVMDay1Task.WPFApp.View.CarView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMDay1Task.WPFApp.View"
+        mc:Ignorable="d"
+        Title="CarView" Height="450" Width="800"
+        DataContext="{StaticResource ResourceKey=CarViewModel}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!--<ComboBox Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2" Name="carListView" ItemsSource="{Binding CarsList}"  Height="30"></ComboBox>-->
+        <ListView Grid.Column="0" Background="LightGray" Name="carListView" ItemsSource="{Binding CarsList}">
+            
+        </ListView>
+        <StackPanel Grid.Column="1"  Width = "150" Height="250">
+            <StackPanel    DataContext="{Binding NewCar}">
+                <Label >Add New Car</Label>
+                <Label></Label>
+                <Label>Id</Label>
+                <TextBox Text="{Binding Id}">
+                
+                </TextBox>
+                <Label>Brand</Label>
+                <TextBox Text="{Binding Brand}">
+
+                </TextBox>
+                <Label>Model</Label>
+                <TextBox Text="{Binding Model}">
+
+                </TextBox>
+                <Label></Label>
+
+            </StackPanel>
+                <Button Margin="5"
+                        Command="{Binding AddCarCommand}"
+                        CommandParameter="{Binding NewCar}">
+                    Add Car
+                </Button>
+        </StackPanel>
+
+        <StackPanel  Width = "150" Height="250" Grid.Column="2" DataContext="{Binding ElementName=carListView, Path=SelectedItem}">
+            <Label >Selected Car Details</Label>
+            <Label></Label>
+            <Label>Id: </Label>
+            <TextBlock Text="{Binding Id}">
+
+            </TextBlock>
+            <Label>Brand: </Label>
+            <TextBlock Text="{Binding Brand}">
+
+            </TextBlock>
+            <Label>Model: </Label>
+            <TextBlock Text="{Binding Model}">
+
+            </TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

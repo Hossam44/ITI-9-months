@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\obj\\Debug\\net7.0\\build-gz\\wusbOVBS.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\obj\\Debug\\net7.0\\scopedcss\\bundle\\lazyLoading.styles.css",
+      "PackagePath": "staticwebassets\\lazyLoading.styles.css"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\Lazy-Loading.png",
+      "PackagePath": "staticwebassets\\Lazy-Loading.png"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\9_months\\26-Blazor\\Task1\\Video\\lazyLoading\\lazyLoading\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.lazyLoading.props",
+      "PackagePath": "build\\lazyLoading.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.lazyLoading.props",
+      "PackagePath": "buildMultiTargeting\\lazyLoading.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.lazyLoading.props",
+      "PackagePath": "buildTransitive\\lazyLoading.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.lazyLoading.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

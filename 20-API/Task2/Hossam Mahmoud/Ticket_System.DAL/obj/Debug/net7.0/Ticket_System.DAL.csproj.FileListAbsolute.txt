@@ -1,0 +1,14 @@
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\bin\Debug\net7.0\Ticket_System.DAL.deps.json
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\bin\Debug\net7.0\Ticket_System.DAL.runtimeconfig.json
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\bin\Debug\net7.0\Ticket_System.DAL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\bin\Debug\net7.0\Ticket_System.DAL.pdb
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.csproj.AssemblyReference.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.AssemblyInfoInputs.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.AssemblyInfo.cs
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.csproj.CoreCompileInputs.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\refint\Ticket_System.DAL.dll
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.pdb
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\Ticket_System.DAL.genruntimeconfig.cache
+D:\9_months\20-API\Task2\Ticket_Sytem\Ticket_System.DAL\obj\Debug\net7.0\ref\Ticket_System.DAL.dll

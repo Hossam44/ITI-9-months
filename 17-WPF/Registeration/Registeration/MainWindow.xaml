@@ -1,0 +1,49 @@
+﻿<Window x:Class="Registeration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registeration"
+        mc:Ignorable="d"
+        Title="Registeration" Height="312" Width="258">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="205">
+            <TextBlock Width="80">First Name</TextBlock>
+            <TextBox Width="120" Name="Fname"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="205">
+            <TextBlock Width="80">Last Name</TextBlock>
+            <TextBox Width="120" Name="Lname"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="205">
+            <TextBlock Width="80">Gender</TextBlock>
+            <TextBox Width="120" Name="Gender"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="205">
+            <TextBlock Width="80">Address</TextBlock>
+            <TextBox Width="120" Name="Adress"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="205">
+            <TextBlock Width="80">Phone</TextBlock>
+            <TextBox Width="120" Name="Phone"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="205">
+            <TextBlock Width="80">Mobile</TextBlock>
+            <TextBox Width="120" Name="Mobile"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="204">
+            <TextBlock Width="80">Email</TextBlock>
+            <TextBox Width="120" Name="Email"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" Width="204">
+            <TextBlock Width="80">Jop Title</TextBlock>
+            <TextBox Width="120" Name="Jop"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="60,8,5,10" Content="OK" Click="Button_Click" Width="52"/>
+            <Button Margin="30,8,5,10" Content="Cancel" Click="Button_Click_1" Width="52"/>
+        </StackPanel>
+
+    </StackPanel>
+
+</Window>

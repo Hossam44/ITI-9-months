@@ -1,0 +1,12 @@
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\bin\Debug\net7.0\sharedLibrary.deps.json
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\bin\Debug\net7.0\sharedLibrary.dll
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\bin\Debug\net7.0\sharedLibrary.pdb
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.csproj.AssemblyReference.cache
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.AssemblyInfoInputs.cache
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.AssemblyInfo.cs
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.csproj.CoreCompileInputs.cache
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.dll
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\refint\sharedLibrary.dll
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\sharedLibrary.pdb
+D:\9_months\26-Blazor\Task1\crudOperationForBlazor\sharedLibrary\obj\Debug\net7.0\ref\sharedLibrary.dll

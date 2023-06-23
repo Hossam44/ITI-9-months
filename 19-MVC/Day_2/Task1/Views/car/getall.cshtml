@@ -1,0 +1,45 @@
+﻿@using Task1.Models
+@{
+    ViewBag.Title = "getall";
+    List<car> all_Cars = ViewBag.Cars;
+}
+<style>
+    table,
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<h2>All Cars</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Model</th>
+        <th>Color</th>
+        <th>Manfacture</th>
+        <th>Get By ID</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+
+    </tr>
+    @foreach (var row in all_Cars)
+    {
+        <tr>
+            <td>@row.ID</td>
+            <td>@row.Model</td>
+            <td>@row.Color</td>
+            <td>@row.Manfacture</td>
+            <td><a href="/Car/getByID/@row.ID">Get</a></td>
+            <td><a href="/Car/EditByID/@row.ID">Edit</a></td>
+            <td><a href="/Car/delete/@row.ID">Delete</a></td>
+        </tr>
+    }
+    <tr>
+        <td colspan="7" align="center">
+            <a href="/Car/insert">Insert</a>
+        </td>
+    </tr>
+</table>

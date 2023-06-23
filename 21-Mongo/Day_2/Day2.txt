@@ -1,0 +1,63 @@
+//a- Display all documents in instructors collection
+db.Instractor.find({})      
+
+//b- Display all instructors with salaries greater than 4000 (only show firstName and salary)
+db.Instractor.find({salary:{$gt:4000}},{firstName:1,salary:1}) //b
+
+//c- Display all instructors with ages less than or equal 25
+db.Instractor.find({age:{$lte:25}}) 
+
+//d- Display all instructors with city mansoura and sreet number 10 or 14 only display (firstname,address,salary).
+
+db.Instractor.find({"address.city":"mansoura" ,$or:[{"address.street":10},{"address.street":14}]},{firstName:1}) 
+
+//e- Display all instructors who have js and jquery in their courses (both ofthem not one of them).
+({courses:"mvc"})
+db.Instractor.find({$and:[{courses:"jquery"} , {courses:"js"}]})
+
+//f- Display number of courses for each instructor and display first name with number of courses.
+db.Instractor.find({courses:{$exists:true}}).forEach(ins=>{
+    print(`${ins.firstName} , courses: ${ins.courses.length}`)
+})
+//g- Write mongodb query to get all instructors that have firstName and lastName properties , sort them by firstName ascending then by
+//lastName descending and finally display their data FullName and age
+
+db.Instractor.find({firstName:{$exists:true},lastName:{$exists:true}}).sort({ "firstName": 1 ,"lastName":-1})
+.forEach(ins=>{
+    print(`FullName : ${ins.firstName} ${ins.lastName} , age: ${ins.age}`)
+})
+
+
+
+//h- Find all instructors that have fullName that contains “mohammed”.
+
+db.Instractor.find({$or:[{firstName:"mohammed"},{lastName:"mohammed"}]})
+
+//i- Delete instructor with first name “ebtesam” and has only 5 courses in courses array
+
+db.Instractor.deleteOne({firstName:"ebtesam",courses:{$size:5}})
+
+//j- Add active property to all instructors and set its value to true.
+db.Instractor.updateMany({},{$set :{phone:"0"}},{upsert:true})  
+
+//k- Change “EF” course to “jquery” for “mazen mohammed” instructor (without knowing EF Index)
+db.Instractor.updateMany({firstName:"mazen",lastName:"mohammed",courses:"EF"},{$set:{"courses.$":"jquery"}})
+
+//l- Add jquery course for “noha hesham”.
+db.Instractor.updateMany({firstName:"noha",lastName:"hesham"},{$push:{courses:"jquery"}})
+
+//m- Remove courses property for “ahmed mohammed ” instructor
+db.Instractor.updateMany({firstName:"ahmed",lastName:"mohammed"},{$unset:{courses:"hghg"}})
+
+//n- Increase salary by 500 for all instructors that has only 3 courses in their list ($inc)
+db.Instractor.updateMany({courses:{$size:3}},{$inc :{salary:500}})
+
+//o- Rename address field for all instructors to fullAddress.
+db.Instractor.updateMany({},{$rename:{address:"fullAddress"}})  
+
+//p- Change street number for noha hesham to 20
+db.Instractor.updateMany({firstName:"noha",lastName:"hesham"},{$set:{"address.fullAddress":20}})
+
+
+
+

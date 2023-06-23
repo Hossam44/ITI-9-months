@@ -1,0 +1,22 @@
+﻿@using Greeting_Card_Maker;
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    @{ 
+        List<Products> prd = new List<Products>()
+        {
+            new Products(){ID=1,Name="Hoa",Cost=10},
+            new Products(){ID=2,Name="Hoa",Cost=20},
+            new Products(){ID=3,Name="Hoa",Cost=30},
+            new Products(){ID=4,Name="Hoa",Cost=40}
+        };
+    }
+    @{ 
+        WebGrid grid = new WebGrid(prd);
+    }
+    @grid.GetHtml()
+</body>
+</html>

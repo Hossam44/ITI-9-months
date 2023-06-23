@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+TzsQGwIB1FdYLKrHvRtzJG5k5hUrDyPz3p/5kG5OCHz0PJ8VJz2NrRzUDs5rmKoyZ+HmqbUeKVhxu1tPSdp5w==",
+  "success": true,
+  "projectFilePath": "D:\\9_months\\20-API\\Task1\\Task1\\Task1.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hossa\\.nuget\\packages\\fsharp.core\\7.0.0\\fsharp.core.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

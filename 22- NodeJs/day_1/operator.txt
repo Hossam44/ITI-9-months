@@ -1,0 +1,5 @@
+The result -6 
+The result 8 
+The result Not Valid Operator 
+The result 8 
+The result 10 

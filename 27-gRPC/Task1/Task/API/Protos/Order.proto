@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "Inventory";
+
+
+service OrderService {
+  
+  rpc MakeOrder (Order) returns (OrderResponse);
+}
+
+message Order {
+	int32 OrderId = 1;
+	repeated Product Products = 2;
+	int32 TotalPrice = 3;
+	Customer Customer = 4;
+}
+
+message Customer {
+	int32 CustomerId = 1;
+	string CustomerName = 2;
+}
+
+message Product {
+	int32 ProductId = 1;
+	string ProductName = 2;
+	string ProductDescription = 3;
+	int32 ProductPrice = 4;
+}
+
+message OrderResponse {
+	bool ResponseMessage = 1;
+}

@@ -1,0 +1,129 @@
+﻿@model Task_buy_Product.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@section Scripts{
+    <script src="~/lib/microsoft-signalr/signalr.js"></script>
+
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        //1
+        var connection = new signalR.HubConnectionBuilder().withUrl("/QuantityHub").build();
+        //2
+        connection.start().then(function () {
+            console.log("Connection Sucsees");
+        });
+        //3
+
+        function SendData() {
+            var productId = parseInt(document.getElementsByTagName("dd")[0].innerText);
+            console.log(productId);
+            //RPC from server
+            connection.invoke("paymentMethod", productId);
+        }
+
+        function SendComment() {
+            var productId = parseInt(document.getElementsByTagName("dd")[0].innerText);
+            var Name = document.getElementsByTagName("dd")[1].innerText;
+            var text = document.getElementById("text").value;
+            console.log(text);
+            //RPC from server
+            connection.invoke("CommentMethod", productId, Name, text);
+        }
+
+        //4
+        connection.on("UpdateProduct", function (productId, count) {
+            console.log(productId);
+            console.log(count);
+                        
+            var Id = parseInt(document.getElementsByTagName("dd")[0].innerText);
+            if (Id == productId)
+            {
+                console.log("alkdnhaslkdnhsalkda");
+                document.getElementsByTagName("dd")[3].innerText = count;
+            }
+        });
+
+
+        connection.on("UpdateComments", function (productId, text) {
+            console.log(productId);
+            console.log(text);
+                        
+            var Id = parseInt(document.getElementsByTagName("dd")[0].innerText);
+            if (Id == productId)
+            {
+                const parent = document.getElementById('parent');
+                const child = document.createElement('div');
+                child.classList.add('alert', 'alert-info');
+                child.setAttribute('role', 'alert');
+                child.textContent = text;
+                parent.appendChild(child);
+            }
+        });
+
+        
+    </script>
+}
+
+<h1>Details</h1>
+
+<div id="parent">
+    <h4>Product</h4>
+    <hr />
+    <div class="row">
+        <div class="col-sm-4">
+            <dl class="row">
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Id)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Quantity)
+                </dd>
+                <dt class = "col-sm-4">
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+                <dd class = "col-sm-8">
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-sm-8">
+           <img width="150" height="150" src="~/images/@Model.Image" />
+        </div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-danger" onclick="SendData()">Buy</button><br /><br />
+    </div>
+    <div>
+        <input id="text" type="text"/>
+        <button type="button" class="btn btn-secondary" onclick="SendComment()">Comment</button>
+    </div>
+
+
+    @if (ViewBag.comments != null)
+    {
+        @foreach (var item in ViewBag.comments)
+        {
+            <div class="alert alert-info" role="alert">
+                @item.Text
+            </div>
+        }
+    }
+</div>
+

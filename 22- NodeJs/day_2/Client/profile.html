@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 10px;
+			padding: 10px;
+			border-style: solid;
+			border-color: #929a92;
+			background-color: #e6f7ff;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h1 {
+			text-align: center;
+			color: #28515b;
+			font-size: 3em;
+		}
+		input[type=text] {
+			font-size: 1.5em;
+			padding: 10px;
+			margin-top: 18px;
+            margin-bottom: 18px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-style: solid;
+            border-width: 2px;
+			border-color: #3a3c3a;
+			background-color: #ffffff;
+            border-radius: 10px;
+            width: 90%;
+		}
+        label {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            color:#5a5c5a;
+            display: block;
+            text-align: center;
+        }
+        button[type=submit] {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 300px;
+            border-style:solid; 
+            border-width:2px; 
+            border-color:#3a3c3a; 
+            background-color:#ffffff; 
+            border-radius:10px; 
+            color:#3a3c3a
+        }
+        button[type=submit]:hover {
+            background-color:#3a3c3a; 
+            color:#ffffff
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+        <form action="all_Users.html" method="get">
+            <h1>Welcome {clientName}</h1>
+            <label for="MobileNumber">Mobile Number:</label>
+            <input type="text" id="MobileNumber" value="{MobileNumber}">
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" value="{Email}">
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" value="{Address}">
+            <button type="submit" id="btn">Submit</button>
+        </form>
+	</div>
+
+</body>
+</html>

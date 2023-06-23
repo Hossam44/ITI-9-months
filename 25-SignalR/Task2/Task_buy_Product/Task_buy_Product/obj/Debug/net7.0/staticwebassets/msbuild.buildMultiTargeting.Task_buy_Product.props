@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Task_buy_Product.props" />
+</Project>

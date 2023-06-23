@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{17AA7BA8-6164-4BDB-991E-14D5BD9AD1E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory", "Inventory\Inventory.csproj", "{BD666CBA-0E09-4E27-833E-CC3914CD27BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment", "Payment\Payment.csproj", "{62C7C10A-57A5-45DF-9354-FCF02996FFC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17AA7BA8-6164-4BDB-991E-14D5BD9AD1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AA7BA8-6164-4BDB-991E-14D5BD9AD1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AA7BA8-6164-4BDB-991E-14D5BD9AD1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AA7BA8-6164-4BDB-991E-14D5BD9AD1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD666CBA-0E09-4E27-833E-CC3914CD27BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD666CBA-0E09-4E27-833E-CC3914CD27BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD666CBA-0E09-4E27-833E-CC3914CD27BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD666CBA-0E09-4E27-833E-CC3914CD27BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C7C10A-57A5-45DF-9354-FCF02996FFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C7C10A-57A5-45DF-9354-FCF02996FFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C7C10A-57A5-45DF-9354-FCF02996FFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C7C10A-57A5-45DF-9354-FCF02996FFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F87F2F87-D6A1-43C0-9DC6-44438C2288B7}
+	EndGlobalSection
+EndGlobal

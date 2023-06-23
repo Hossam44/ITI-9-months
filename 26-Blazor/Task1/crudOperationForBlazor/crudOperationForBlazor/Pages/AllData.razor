@@ -1,0 +1,53 @@
+﻿@page "/getAll"
+@using sharedLibrary;
+
+<h3>All Data</h3>
+
+<a href="@($"AddTrainee")" class="btn btn-outline-primary"> Add Trainee </a>
+
+
+@if (MyContext.Trainees == null)
+{
+    <p> Loading......... </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Mobile No.</th>
+                <th>Birth Date</th>
+                <th>Is Graduated</th>
+                <th>Track Name</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+@*                <th>&nbsp;</th>
+*@              
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var trainee in MyContext.Trainees)
+            {
+                var track = MyContext.Tracks.FirstOrDefault(t => t.Id == trainee.TrackId);
+                <tr>
+                    <td>@trainee.Id</td>
+                    <td>@trainee.Name</td>
+                    <td>@trainee.Gender</td>
+                    <td>@trainee.Email</td>
+                    <td>@trainee.MobileNo</td>
+                    <td>@trainee.BirthDate.ToShortDateString()</td>
+                    <td>@(trainee.IsGraduated ? "Yes" : "No")</td>
+                    <td>@track?.Name</td>
+                    <td> <a href="@($"traineeDetails/{trainee.Id}")" class="btn btn-outline-primary"> Details </a> </td>
+                    <td> <a href="@($"EditTrainee/{trainee.Id}")" class="btn btn-outline-primary"> Edit </a> </td>
+                    <td> <a href="@($"DeleteTrainee/{trainee.Id}")" class="btn btn-outline-primary"> Delete </a> </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

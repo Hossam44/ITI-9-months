@@ -1,0 +1,28 @@
+﻿@page "/LazyLoading"
+@inject IJSRuntime JSRuntime
+
+<h3>Lazy Loading</h3>
+
+<img id="myImage" />
+
+@*<img src="/Lazy-Loading.png" height="500" width="800" />
+*@
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("loadImage", "myImage", "/Lazy-Loading.png");
+        }
+    }
+}
+
+@*
+    lets strat at first with
+
+    1-Eager
+    2-Lazy
+    3-Explicit
+*@

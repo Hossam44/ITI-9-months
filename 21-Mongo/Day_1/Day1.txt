@@ -1,0 +1,13 @@
+db.Instractor.find({})
+
+db.Instractor.find({},{firstName:true, lastName:1,address:1})  //b
+
+db.Instractor.find({age:21},{firstName:1,"address.city":1}) //c
+
+db.Instractor.find({"address.city":"mansoura"},{firstName:1,age:1}) //D
+
+
+db.Instractor.find({firstName:"mona"},{lastName:"ahmed"},{firstName:1,lastName:1})
+
+db.Instractor.find({courses:"mvc"},{firstName:1,courses:1})
+

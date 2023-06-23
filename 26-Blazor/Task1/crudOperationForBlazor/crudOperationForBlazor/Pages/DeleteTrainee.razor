@@ -1,0 +1,27 @@
+﻿@page "/DeleteTrainee/{TraineeId:int}"
+@using sharedLibrary;
+
+<h3>DeleteTrainee</h3>
+
+@code {
+
+
+    [Parameter]
+    public int TraineeId { get; set; }
+
+    public Trainee trainee { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+
+
+        trainee = MyContext.Trainees.FirstOrDefault(T => T.Id == TraineeId);
+        MyContext.Trainees.Remove(trainee);
+
+        return base.OnInitializedAsync();
+    }
+}
+
+<div class="alert alert-danger" role="alert">
+    A simple danger alert—check it out!
+</div>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    @{
+        var image_Data = new Dictionary<string, List<string>>();
+
+        image_Data.Add("BirthDay", new List<string> { "/images/bd2.jpg", "Happy BirthDay" });
+
+        image_Data.Add("GWS", new List<string>() { "/images/well.gif", "Get Well Soon" });
+
+        image_Data.Add("valentine", new List<string>() { "/images/val.bmp", "Happy Valintine" });
+
+        image_Data.Add("Congrats", new List<string>() { "/images/val.bmp", "Happy Valintine" });
+
+    }
+    <div style="display:flex">
+
+        <div style="background-color:antiquewhite;width:50%">
+            <form method="post">
+                <p>Choose Background Image</p>
+                <select name="image">
+                    <option value="backgrounds/0.jpg">0</option>
+                    <option value="backgrounds/1.jpg">1</option>
+                    <option value="backgrounds/2.jpg">2</option>
+                    <option value="backgrounds/3.jpg">3</option>
+                    <option value="backgrounds/4.jpg">4</option>
+                    <option value="backgrounds/5.jpg">5</option>
+                    <option value="backgrounds/6.jpg">6</option>
+                    <option value="backgrounds/7.jpg">7</option>
+                    <option value="backgrounds/8.jpg">8</option>
+                    <option value="backgrounds/9.jpg">9</option>
+                    <option value="backgrounds/10.jpg">10</option>
+                    <option value="backgrounds/11.jpg">11</option>
+                </select>
+
+                <p>Choose Font Color</p>
+                <select name="color">
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                    <option value="purple">purple</option>
+                    <option value="Gray">Gray</option>
+                </select>
+
+                <p>Choose Greating type</p>
+                <input type="radio" name="Greating_type" value="BirthDay">
+                <label>BirthDay</label><br />
+                <input type="radio" name="Greating_type" value="GWS">
+                <label>Get Well Soon</label><br />
+
+                <input type="radio" name="Greating_type" value="valentine">
+                <label>valentine</label><br />
+
+                <input type="radio" name="Greating_type" value="Congrats">
+                <label>Congrats</label><br />
+
+                <input type="checkbox" name="Add_Picture" value="Add_Picture" />
+                <label>Add_Picture</label><br />
+
+                <label>Enter The Greating Message</label><br />
+                <input type="text" name="Greating_Message" /><br /><br />
+                <input type="submit" value="Priview" />
+            </form>
+        </div>
+        @if (IsPost)
+        {
+            <div style="background-image: url(@Request["image"]);width:50%;text-align:center">
+
+                <h3 style="color:@Request["color"]">@image_Data["BirthDay"][1]</h3>
+
+                @if (Request["Add_Picture"] == "Add_Picture")
+                {
+                    <img src=@image_Data[Request["Greating_type"]][0] />
+                }
+
+                <h2 style="color:@Request["color"]">@Request["Greating_Message"]</h2>
+
+            </div>
+
+        }
+
+    </div>
+
+
+</body>
+</html>

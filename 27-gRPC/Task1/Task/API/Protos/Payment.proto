@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Payment";
+
+
+service PaymentService {
+  rpc MakePayment (PaymentRequest) returns (PaymentResponse);
+}
+
+message PaymentRequest {
+  int32 ProductId = 1;
+  int32 CustomerId = 2;
+  int32 TotalPrice = 3;
+}
+
+message PaymentResponse {
+  bool PaymentResponseMessage = 1;
+}
